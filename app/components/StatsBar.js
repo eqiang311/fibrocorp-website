@@ -1,6 +1,6 @@
 export default function StatsBar() {
   const stats = [
-    { number: '$1.70', label: 'Cost per pallet vs. $15–30 for wood' },
+    { number: '$1.70', label: 'Cost per pallet vs. $15–30 for wood in USA' },
     { number: '$100B+', label: 'Global pallet industry annual market' },
     { number: '158', label: 'Countries with PCT patent protection' },
     { number: '20+', label: 'Years of pulp molding expertise' },

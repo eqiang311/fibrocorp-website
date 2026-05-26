@@ -27,7 +27,7 @@ export default function Hero() {
         marginBottom: '24px',
         position: 'relative'
       }}>
-        PCT-Patented · SGS-Certified · Tacoma, Washington
+        PCT-Patented · SGS-Certified · Made in the USA
       </p>
 
       {/* Headline */}

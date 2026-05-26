@@ -1,3 +1,5 @@
+import GlobeSection from './GlobeSection'
+
 export default function History() {
   return (
     <section style={{
@@ -36,7 +38,7 @@ export default function History() {
             fontWeight: '600',
             letterSpacing: '-0.5px'
           }}>
-            Built on decades.<br />Driven by waste.
+            Built on decades<br />Driven by waste
           </h2>
           <div style={{
             fontSize: '13px',
@@ -45,13 +47,13 @@ export default function History() {
             fontWeight: '300'
           }}>
             <p style={{ marginBottom: '14px' }}>
-              FibroCorp's roots run deeper than pallets. We began in paper manufacturing — learning the industry from the inside, redirecting heat from production plants to warm entire cities, and planting trees to offset what the process consumed.
+              FibroCorp's roots run deeper than pallets. We began in paper manufacturing, learning the industry from the inside, redirecting heat from production plants to warm entire cities, and planting trees to offset what the process consumed.
             </p>
             <p style={{ marginBottom: '14px' }}>
-              Over the last 20 years, that hands-on experience led us to a single question: what happens to all the waste? Through two decades of R&D in pulp molding, we developed processes that turn waste paper into high-performance products — egg cartons, fruit trays, wine carriers — each replacing a material that didn't need to exist.
+              Over the last 20 years, that hands on experience led us to a single question: what happens to all the waste? Through two decades of R&D in pulp molding, we developed processes that turn waste paper into high performance products, egg cartons, fruit trays, wine carriers, each replacing a material that didn't need to exist.
             </p>
             <p>
-              Our latest innovation is our most consequential: a PCT-patented, SGS-certified molded fiber pallet that outperforms wood economically and environmentally — built for a $100B+ industry that has never had a truly sustainable alternative. Until now.
+              Our latest innovation is our most consequential: a PCT patented, SGS certified molded fiber pallet that outperforms wood economically and environmentally, built for a $100B+ industry that has never had a truly sustainable alternative. Until now.
             </p>
           </div>
           <a href="/contact" style={{
@@ -90,8 +92,8 @@ export default function History() {
 
           {/* Founder cards */}
           {[
-            { initials: 'PZ', name: 'Paul Zhang', title: 'President & Founder — 20+ years in pulp molding' },
-            { initials: 'SZ', name: 'Sharon Zhang', title: 'Vice President & Co-Founder' }
+            { name: 'Paul Zhang', title: 'President & Founder, 20+ years in pulp molding' },
+            { name: 'Sharon Zhang', title: 'Vice President & Co Founder' }
           ].map((founder) => (
             <div key={founder.name} style={{
               display: 'flex',
@@ -103,21 +105,17 @@ export default function History() {
               borderRadius: '2px',
               marginBottom: '10px'
             }}>
-              <div style={{
-                width: '40px',
-                height: '40px',
-                borderRadius: '2px',
-                background: '#1a3d24',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '13px',
-                fontWeight: '500',
-                color: '#6dc98a',
-                flexShrink: 0
-              }}>
-                {founder.initials}
-              </div>
+              <img
+                src="/User /user-3296.svg"
+                alt={founder.name}
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '2px',
+                  objectFit: 'cover',
+                  flexShrink: 0
+                }}
+              />
               <div>
                 <div style={{ fontSize: '13px', fontWeight: '500', color: '#0d1f14' }}>{founder.name}</div>
                 <div style={{ fontSize: '11px', color: '#6b8c76', fontWeight: '300' }}>{founder.title}</div>
@@ -125,41 +123,7 @@ export default function History() {
             </div>
           ))}
 
-          {/* Global presence */}
-          <div style={{
-            marginTop: '16px',
-            padding: '14px 16px',
-            background: '#f0f7f2',
-            border: '0.5px solid #c8dece',
-            borderRadius: '2px'
-          }}>
-            <div style={{
-              fontSize: '10px',
-              fontWeight: '500',
-              color: '#2d7a4f',
-              textTransform: 'uppercase',
-              letterSpacing: '2px',
-              marginBottom: '10px'
-            }}>
-              Global presence
-            </div>
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-              {['South Korea', 'Saudi Arabia', 'Egypt', 'United States'].map((country) => (
-                <span key={country} style={{
-                  fontSize: '11px',
-                  padding: '4px 10px',
-                  background: '#e8f5ed',
-                  color: '#1f5c38',
-                  borderRadius: '2px',
-                  fontWeight: '500',
-                  letterSpacing: '0.3px',
-                  border: '0.5px solid #c8dece'
-                }}>
-                  {country}
-                </span>
-              ))}
-            </div>
-          </div>
+          <GlobeSection />
         </div>
 
       </div>
