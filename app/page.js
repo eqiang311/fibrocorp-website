@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import StatsBar from './components/StatsBar'
 import Validation from './components/Validation'
+import Recognition from './components/Recognition'
 import Economics from './components/Economics'
 import HowItWorks from './components/HowItWorks'
 import Products from './components/Products'
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <StatsBar />
       <Validation />
+      <Recognition />
       <Economics />
       <HowItWorks />
       <Products />
