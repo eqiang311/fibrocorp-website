@@ -43,7 +43,7 @@ export default function Mission() {
         fontStyle: 'italic',
         position: 'relative'
       }}>
-        "Being greener shouldn't be a burden. It should be a natural extension of how a business operates — one that strengthens the bottom line, satisfies stakeholders, and leaves a cleaner world behind in the process."
+        "Being greener is a natural extension of how a successful business."
       </p>
 
     </section>

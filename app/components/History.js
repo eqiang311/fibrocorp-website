@@ -52,8 +52,11 @@ export default function History() {
             <p style={{ marginBottom: '14px' }}>
               Over the last 20 years, that hands on experience led us to a single question: what happens to all the waste? Through two decades of R&D in pulp molding, we developed processes that turn waste paper into high performance products, egg cartons, fruit trays, wine carriers, each replacing a material that didn't need to exist.
             </p>
-            <p>
+            <p style={{ marginBottom: '14px' }}>
               Our latest innovation is our most consequential: a PCT patented, SGS certified molded fiber pallet that outperforms wood economically and environmentally, built for a $100B+ industry that has never had a truly sustainable alternative. Until now.
+            </p>
+            <p style={{ marginBottom: '14px' }}>
+              Demonstration factories are now operating in Tacoma, Washington and Cairo, Egypt — validating both the technology and the economic model in real-world conditions. Conversations are active across multiple regions. First-market partners receive preferred licensing terms, dedicated installation support, and priority access to new territories.
             </p>
           </div>
           <a href="/contact" style={{
@@ -92,7 +95,7 @@ export default function History() {
 
           {/* Founder cards */}
           {[
-            { name: 'Paul Zhang', title: 'President & Founder, 20+ years in pulp molding' },
+            { name: 'Paul Zhang', title: 'President & Founder — 45 years experience, 40+ patents' },
             { name: 'Sharon Zhang', title: 'Vice President & Co Founder' }
           ].map((founder) => (
             <div key={founder.name} style={{
@@ -122,6 +125,10 @@ export default function History() {
               </div>
             </div>
           ))}
+
+          <p style={{ fontSize: '12px', color: '#5a7a64', lineHeight: '1.7', fontWeight: '300', marginTop: '16px', marginBottom: '24px' }}>
+            Paul Zhang began his entrepreneurial journey in the United States in 1990. Over 45 years, he has obtained more than 40 patents across environmental protection technology and industrial manufacturing — earning recognition from Washington State governors, U.S. senators, and government leaders across three continents.
+          </p>
 
           <GlobeSection />
         </div>

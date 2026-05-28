@@ -1,15 +1,17 @@
 export default function StatsBar() {
   const stats = [
-    { number: '$1.70', label: 'Cost per pallet vs. $15–30 for wood in USA' },
-    { number: '$100B+', label: 'Global pallet industry annual market' },
-    { number: '158', label: 'Countries with PCT patent protection' },
-    { number: '20+', label: 'Years of pulp molding expertise' },
+    { number: '214%',   label: 'Annual ROI on a 20-line unit' },
+    { number: '5.6mo',  label: 'Investment payback period' },
+    { number: '$1.70',  label: 'Cost per pallet vs. $15–30 for wood' },
+    { number: 'SGS',    label: 'Independently certified — load, durability, waterproofing' },
+    { number: '$100B+', label: 'Global pallet market size' },
+    { number: '158',    label: 'Countries with PCT patent protection' },
   ]
 
   return (
     <div style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridTemplateColumns: 'repeat(6, 1fr)',
       background: '#0d2218',
       borderBottom: '0.5px solid #1e3d26'
     }}>

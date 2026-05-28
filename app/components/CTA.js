@@ -27,7 +27,7 @@ export default function CTA() {
             color: '#6b8c76',
             fontWeight: '300'
           }}>
-            Request a licensing conversation or schedule a visit to our Tacoma facility.
+            Early partners receive preferred licensing terms and first-access to new regions. Let's talk about your market.
           </p>
         </div>
         <div style={{ display: 'flex', gap: '10px', flexShrink: 0 }}>

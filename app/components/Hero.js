@@ -40,7 +40,7 @@ export default function Hero() {
         letterSpacing: '-1px',
         position: 'relative'
       }}>
-        Profitable{' '}
+        A proven business.{' '}
         <em style={{
           fontFamily: 'Playfair Display, serif',
           color: '#6dc98a',
@@ -48,7 +48,7 @@ export default function Hero() {
           fontSize: '54px',
           fontStyle: 'italic'
         }}>
-          Sustainability.
+          Ready to operate.
         </em>
       </h1>
 
@@ -62,7 +62,7 @@ export default function Hero() {
         fontWeight: '300',
         position: 'relative'
       }}>
-        Decrease your Scope 3 emissions — $1.70 at a time.
+        FibroCorp gives you everything you need to enter two of the world's largest industries — patented technology, production-ready equipment, and a complete business plan.
       </p>
 
       {/* Tagline */}
@@ -75,7 +75,7 @@ export default function Hero() {
         paddingLeft: '12px',
         position: 'relative'
       }}>
-        With FibroCorp, reducing your Scope 3 emissions is just the beginning. The real impact is global.
+        We built the system. You run it. Early partners get preferred terms and first access to new regions.
       </p>
 
       {/* Buttons */}
@@ -93,14 +93,14 @@ export default function Hero() {
         }}>
           Request a licensing conversation ↗
         </a>
-        <a href="/products" style={{
+        <a href="/opportunity" style={{
           fontSize: '12px',
           color: '#7aab88',
           textDecoration: 'none',
           fontWeight: '400',
           letterSpacing: '0.3px'
         }}>
-          Explore the technology →
+          See the opportunity →
         </a>
       </div>
 

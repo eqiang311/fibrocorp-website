@@ -1,22 +1,31 @@
 export default function Products() {
-  const products = [
+
+  const mainProducts = [
     {
-      icon: '🏭',
-      title: 'Molded Fiber Technology',
-      text: 'Automated production lines converting waste paper into molded fiber products — egg cartons, fruit trays, wine carriers, electronic parts, and pallets.',
-      link: 'Explore the technology →'
+      badge: 'Early mover advantage',
+      badgeStyle: { background: '#faeeda', color: '#633806', border: '0.5px solid #f0d8b4' },
+      title: 'Pallet Production Business',
+      market: "Over 90% of the world's 12.7 billion pallets are still made from wood. FibroCorp's pallet costs $1.70 to produce vs. $15–30 for wood — and outperforms it on weight, waterproofing, and recyclability. The industry is changing. First-market partners lead it.",
+      stats: [
+        { number: '$100B+', label: 'Global market' },
+        { number: '5.9M',   label: 'Pallets/year (20 lines)' },
+        { number: '78%',    label: 'Gross margin' },
+      ],
+      link: 'Explore the pallet business →',
+      href: '/products/pallets'
     },
     {
-      icon: '📦',
-      title: 'Pallets, Equipment & Machinery',
-      text: '2-layer, heavy load, flat top, and water-resistant variants — SGS-certified and outperforming wood on cost, weight, and recyclability.',
-      link: 'View pallet specifications →'
-    },
-    {
-      icon: '⬡',
-      title: 'Molds',
-      text: 'Custom mold solutions developed in partnership with licensees for specific product applications. Details available upon inquiry.',
-      link: 'Get in touch →'
+      badge: 'Proven & operating',
+      badgeStyle: { background: '#e8f5ed', color: '#1f5c38', border: '0.5px solid #c8dece' },
+      title: 'Molded Fiber Business',
+      market: "Walmart, Costco, Kroger, Safeway, Target, and Trader Joe's already buy products made on this machine. Egg cartons, fruit trays, wine carriers, electronic trays — one production line, multiple revenue streams. Demand is not a question.",
+      stats: [
+        { number: '$25B+', label: 'Molded fiber market' },
+        { number: '10+',   label: 'Product types' },
+        { number: '70%',   label: 'Gross margin' },
+      ],
+      link: 'Explore the molded fiber business →',
+      href: '/products/molded-fiber'
     }
   ]
 
@@ -26,6 +35,8 @@ export default function Products() {
       background: '#f0f7f2',
       borderBottom: '0.5px solid #c8dece'
     }}>
+
+      {/* Eyebrow */}
       <p style={{
         fontSize: '10px',
         fontWeight: '500',
@@ -38,8 +49,10 @@ export default function Products() {
         gap: '8px'
       }}>
         <span style={{ display: 'block', width: '16px', height: '1px', background: '#2d7a4f' }}></span>
-        Products
+        Two businesses
       </p>
+
+      {/* Headline */}
       <h2 style={{
         fontSize: '28px',
         color: '#0d1f14',
@@ -48,8 +61,10 @@ export default function Products() {
         fontWeight: '600',
         letterSpacing: '-0.5px'
       }}>
-        One technology.<br />Many applications.
+        Choose your path.
       </h2>
+
+      {/* Sub-headline */}
       <p style={{
         fontSize: '13px',
         color: '#5a7a64',
@@ -58,66 +73,113 @@ export default function Products() {
         lineHeight: '1.7',
         fontWeight: '300'
       }}>
-        From the machine to the mold, FibroCorp delivers a complete licensed manufacturing system — built for performance, designed for scale.
+        Same proven system. Two of the world's largest markets. Both use waste
+        paper as raw material.
       </p>
 
+      {/* Two main product cards — side by side */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '12px'
+        gridTemplateColumns: '1fr 1fr',
+        gap: '12px',
+        marginBottom: '12px'
       }}>
-        {products.map((product) => (
+        {mainProducts.map((product) => (
           <div key={product.title} style={{
             background: '#ffffff',
             border: '0.5px solid #c8dece',
-            borderTop: '2px solid #2d7a4f',
             borderRadius: '2px',
-            padding: '22px 18px'
+            padding: '24px 20px'
           }}>
+
+            {/* Badge */}
             <div style={{
-              width: '32px',
-              height: '32px',
-              borderRadius: '2px',
-              background: '#e8f5ed',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: '14px',
-              fontSize: '16px',
-              border: '0.5px solid #c8dece'
-            }}>
-              {product.icon}
-            </div>
-            <div style={{
-              fontSize: '13px',
+              display: 'inline-block',
+              fontSize: '10px',
               fontWeight: '500',
+              padding: '3px 8px',
+              borderRadius: '2px',
+              marginBottom: '14px',
+              letterSpacing: '0.3px',
+              ...product.badgeStyle
+            }}>
+              {product.badge}
+            </div>
+
+            {/* Title */}
+            <div style={{
+              fontSize: '15px',
+              fontWeight: '600',
               color: '#0d1f14',
-              marginBottom: '6px',
+              marginBottom: '10px',
               letterSpacing: '-0.2px'
             }}>
               {product.title}
             </div>
+
+            {/* Market copy */}
             <div style={{
               fontSize: '12px',
               color: '#5a7a64',
-              lineHeight: '1.6',
-              fontWeight: '300'
+              lineHeight: '1.7',
+              fontWeight: '300',
+              marginBottom: '20px'
             }}>
-              {product.text}
+              {product.market}
             </div>
+
+            {/* Divider */}
             <div style={{
+              height: '0.5px',
+              background: '#c8dece',
+              marginBottom: '16px'
+            }} />
+
+            {/* Stats row */}
+            <div style={{
+              display: 'flex',
+              gap: '20px',
+              marginBottom: '18px'
+            }}>
+              {product.stats.map((stat) => (
+                <div key={stat.label}>
+                  <div style={{
+                    fontSize: '16px',
+                    fontWeight: '600',
+                    color: '#1f5c38',
+                    lineHeight: '1'
+                  }}>
+                    {stat.number}
+                  </div>
+                  <div style={{
+                    fontSize: '10px',
+                    color: '#6b8c76',
+                    marginTop: '3px',
+                    fontWeight: '300'
+                  }}>
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Link */}
+            <a href={product.href} style={{
               fontSize: '11px',
               color: '#2d7a4f',
               fontWeight: '500',
-              marginTop: '14px',
               letterSpacing: '0.3px',
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
+              textDecoration: 'none'
             }}>
               {product.link}
-            </div>
+            </a>
+
           </div>
         ))}
       </div>
+
+
     </section>
   )
 }

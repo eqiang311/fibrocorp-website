@@ -5,6 +5,43 @@ export default function Validation() {
       background: '#ffffff',
       borderBottom: '0.5px solid #c8dece'
     }}>
+
+      {/* Customer bar */}
+      <div style={{ marginBottom: '40px' }}>
+        <p style={{
+          fontSize: '10px',
+          fontWeight: '500',
+          letterSpacing: '3px',
+          textTransform: 'uppercase',
+          color: '#2d7a4f',
+          marginBottom: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px'
+        }}>
+          <span style={{ display: 'block', width: '16px', height: '1px', background: '#2d7a4f' }}></span>
+          Trusted by
+        </p>
+        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          {[
+            'Walmart', 'Costco', 'Kroger', 'Safeway', 'Target',
+            "Trader Joe's", 'Fred Meyer', 'Wilcox Farms', 'Hickman', 'Rose Acre'
+          ].map(name => (
+            <span key={name} style={{
+              fontSize: '12px',
+              fontWeight: '500',
+              color: '#0d1f14',
+              padding: '7px 14px',
+              border: '0.5px solid #c8dece',
+              borderRadius: '2px',
+              background: '#f0f7f2'
+            }}>
+              {name}
+            </span>
+          ))}
+        </div>
+      </div>
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
@@ -122,20 +159,30 @@ export default function Validation() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {[
               {
-                date: 'January 20',
+                date: 'January 20, 2025',
                 title: 'Paul Zhang Day',
-                text: 'Washington State officially declared Paul Zhang Day in recognition of FibroCorp\'s environmental contribution.'
+                text: 'King County Executive Dow Constantine declared January 20th Paul Zhang Day. Later adopted by seven other cities in Washington State.'
+              },
+              {
+                date: 'Washington State',
+                title: "Governor Bob Ferguson's visit",
+                text: 'Governor and his team visited the Tacoma facility for live pallet performance testing.'
               },
               {
                 date: 'U.S. Congress',
-                title: 'Senate Recognition',
-                text: 'Formally endorsed by U.S. senators for environmental and economic significance.'
+                title: 'Congressman Adam Smith',
+                text: 'Visited the Tacoma facility. Formally endorsed for environmental and economic significance.'
+              },
+              {
+                date: 'City Leaders',
+                title: 'Five mayors + Port Commissioner',
+                text: 'Mayors of Seattle, Tacoma, Bellevue, Renton, and Tukwila — plus Port of Seattle Commissioner Sam Cho.'
               },
               {
                 date: 'International',
-                title: 'Diplomatic Visits',
-                text: 'Government officials from South Korea, Saudi Arabia, and Egypt have visited our Tacoma facility.'
-              }
+                title: 'Diplomatic engagement',
+                text: 'Government delegations from South Korea, Saudi Arabia, and Egypt have visited the Tacoma facility.'
+              },
             ].map((item) => (
               <div key={item.title} style={{
                 padding: '16px',

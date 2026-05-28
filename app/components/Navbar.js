@@ -22,6 +22,7 @@ export default function Navbar() {
       <div style={{ display: 'flex', gap: '28px', alignItems: 'center' }}>
         <a href="/products" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Products</a>
         <a href="/opportunity" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Opportunity</a>
+        <a href="/proof" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Proof</a>
         <a href="/sustainability" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Sustainability</a>
         <a href="/news" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>News</a>
         <a href="/contact" style={{
