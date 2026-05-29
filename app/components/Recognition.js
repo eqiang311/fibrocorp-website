@@ -100,7 +100,7 @@ export default function Recognition() {
       {/* Sticky stack container */}
       <div style={{
         position: 'relative',
-        paddingBottom: `${items.length * TOP_OFFSET + 80}px`
+        paddingBottom: `${items.length * TOP_OFFSET}px`
       }}>
         {items.map((item, index) => (
           <div
