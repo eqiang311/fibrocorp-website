@@ -17,14 +17,22 @@ export default function Footer() {
         © 2026 FibroCorp · Tacoma, Washington
       </span>
       <div style={{ display: 'flex', gap: '20px' }}>
-        {['Products', 'Proof', 'Opportunity', 'Sustainability', 'News', 'Contact', 'Careers'].map((link) => (
-          <a key={link} href={`/${link.toLowerCase()}`} style={{
+        {[
+          { label: 'Products', href: '/products' },
+          { label: 'Proof', href: '/proof' },
+          { label: 'Partner & License', href: '/opportunity' },
+          { label: 'Sustainability', href: '/sustainability' },
+          { label: 'News', href: '/news' },
+          { label: 'Contact', href: '/contact' },
+          { label: 'Careers', href: '/careers' },
+        ].map((link) => (
+          <a key={link.label} href={link.href} style={{
             fontSize: '11px',
             color: '#4a7a5a',
             textDecoration: 'none',
             letterSpacing: '0.3px'
           }}>
-            {link}
+            {link.label}
           </a>
         ))}
       </div>
