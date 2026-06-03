@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import StatsBar from './components/StatsBar'
 import Validation from './components/Validation'
 import Recognition from './components/Recognition'
 import NewsStrip from './components/NewsStrip'
@@ -18,7 +17,6 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <StatsBar />
       <Validation />
       <Recognition />
       <NewsStrip />

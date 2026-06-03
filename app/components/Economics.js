@@ -65,7 +65,7 @@ export default function Economics() {
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
         gap: '1px',
-        background: '#1e3d26',
+        background: '#193f23',
         border: '0.5px solid #1e3d26',
         position: 'relative'
       }}>

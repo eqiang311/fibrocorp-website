@@ -43,7 +43,7 @@ export default function Mission() {
         fontStyle: 'italic',
         position: 'relative'
       }}>
-        "Being greener is a natural extension of how a successful business."
+        "FibroCorp's mission is to protect the global environment through innovative pulp molding technology."
       </p>
 
     </section>
