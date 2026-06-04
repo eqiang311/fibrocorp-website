@@ -9,21 +9,23 @@ export default function Navbar() {
       borderBottom: '0.5px solid #1e3d26'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <span style={{
+        <a href="/" style={{
           fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '18px',
           fontWeight: '500',
           color: '#e8f5ed',
-          letterSpacing: '0.5px'
+          letterSpacing: '0.5px',
+          textDecoration: 'none'
         }}>
           FibroCorp
-        </span>
+        </a>
       </div>
       <div style={{ display: 'flex', gap: '28px', alignItems: 'center' }}>
         <a href="/products" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Products</a>
         <a href="/opportunity" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Partner & License</a>
         <a href="/proof" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Proof</a>
         <a href="/sustainability" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Sustainability</a>
+        <a href="/market" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>Market</a>
         <a href="/news" style={{ fontSize: '13px', color: '#7aab88', textDecoration: 'none' }}>News</a>
         <a href="/contact" style={{
           fontSize: '13px',
