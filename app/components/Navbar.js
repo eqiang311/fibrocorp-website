@@ -36,7 +36,7 @@ export default function Navbar() {
           borderRadius: '2px',
           textDecoration: 'none'
         }}>
-          Request a conversation
+          Contact Us
         </a>
       </div>
     </nav>

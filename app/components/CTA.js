@@ -44,7 +44,7 @@ export default function CTA() {
           }}>
             Schedule a visit
           </a>
-          <a href="/contact" style={{
+          <a href="mailto:esmeraldaq@fibrocorp.com" style={{
             fontSize: '12px',
             fontWeight: '500',
             background: '#1f5c38',

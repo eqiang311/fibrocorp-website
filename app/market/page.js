@@ -627,7 +627,7 @@ export default function MarketPage() {
             }}>
               See the Partner &amp; License opportunity ↗
             </a>
-            <a href="/contact" style={{
+            <a href="mailto:esmeraldaq@fibrocorp.com" style={{
               fontSize: '14px',
               fontWeight: '400',
               color: '#7aab88',
