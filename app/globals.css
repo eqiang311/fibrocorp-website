@@ -27,3 +27,8 @@ body {
   background: #ffffff;
   color: var(--text-dark);
 }
+
+@keyframes ecoFlash {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
